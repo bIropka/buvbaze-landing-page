@@ -29,5 +29,20 @@ $(document).ready(function () {
 
     });
 
+    /******************************************************************************************************************
+     ******* slider scripts
+     ******************************************************************************************************************/
+
+    $('.reviews-slider').slick({
+        speed: 200,
+        initialSlide: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        appendArrows: '.slider-control',
+        prevArrow: '.slider-prev',
+        nextArrow: '.slider-next',
+        slidesToShow: 3
+    });
+
 
 });
