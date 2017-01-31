@@ -139,8 +139,8 @@ section {
   font-weight: 700;
 }
 .show-more:hover {
-  border: 1px solid #d9d9d9;
-  background: #d9d9d9;
+  border: 1px solid #000;
+  background: #000;
   color: #fff;
 }
 .show-more:active {
@@ -728,15 +728,12 @@ nav ul li:last-child {
   left: 0;
   right: 0;
   top: -20px;
-  background: #000 url(../images/sprite-hands.png);
+  background: #fff url(../images/sprite-hands.png);
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-}
-.reviews .reviews-slider .slide.slick-active:before {
-  background-color: #fff;
 }
 .reviews .reviews-slider .slide.slick-active .review-text {
   opacity: 1!important;
@@ -929,8 +926,8 @@ nav ul li:last-child {
   bottom: 30px;
 }
 .stock .ad .ad-buy a:hover {
-  border: 1px solid #d9d9d9;
-  background: #d9d9d9;
+  border: 1px solid #000;
+  background: #000;
   color: #fff;
 }
 .stock .ad .ad-buy a:active {
