@@ -22,6 +22,7 @@
   width: 1230px;
   margin: 0 auto;
   position: relative;
+  padding: 0 15px;
 }
 .wrapper-inner:after {
   content: '';
@@ -311,6 +312,11 @@ nav ul li:last-child {
   width: auto;
   height: auto;
   background: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 .personal-block .menu-personal .control .avatar {
   display: inline-block;
@@ -320,6 +326,11 @@ nav ul li:last-child {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
 }
 .personal-block .menu-personal .control .nickname {
   display: inline-block;
@@ -327,9 +338,19 @@ nav ul li:last-child {
   color: #243e45;
   font-weight: 700;
   margin-left: 3px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.personal-block .menu-personal .control:hover .avatar {
+  -webkit-box-shadow: 0 0 0 4px #ffb73a;
+  -moz-box-shadow: 0 0 0 4px #ffb73a;
+  box-shadow: 0 0 0 4px #ffb73a;
 }
 .personal-block .menu-personal .control:hover .nickname {
-  text-decoration: underline;
+  color: #ffb73a;
 }
 .personal-block .menu-personal .popup-menu {
   width: 160px;
@@ -757,6 +778,10 @@ nav ul li:last-child {
   font-weight: 700;
   font-size: 1.2em;
 }
+.reviews .reviews-slider .slide .reviewer-name:hover {
+  color: #ffb73a;
+  text-shadow: 0 0 1px #ffb73a;
+}
 .reviews .reviews-slider .slide .reviews-number {
   color: #73888e;
   margin-bottom: 10px;
@@ -779,6 +804,7 @@ nav ul li:last-child {
   font-size: .85em;
 }
 .reviews .reviews-slider .slide .image-wrap {
+  display: block;
   width: 70px;
   height: 70px;
   border: 1px solid #bac6c7;
@@ -790,6 +816,12 @@ nav ul li:last-child {
   left: 0;
   right: 0;
   bottom: -35px;
+}
+.reviews .reviews-slider .slide .image-wrap:hover {
+  border: 1px solid #ffb73a;
+  -webkit-box-shadow: 0 0 0 3px #ffb73a;
+  -moz-box-shadow: 0 0 0 3px #ffb73a;
+  box-shadow: 0 0 0 3px #ffb73a;
 }
 /**********************************************************************************************************************
 ********** stock

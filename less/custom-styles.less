@@ -29,6 +29,7 @@
   width: 1230px;
   margin: 0 auto;
   position: relative;
+  padding: 0 15px;
 }
 
 .wrapper-inner:after {
@@ -336,6 +337,11 @@ nav {
       width: auto;
       height: auto;
       background: none;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -ms-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
 
       .avatar {
         display: inline-block;
@@ -345,6 +351,11 @@ nav {
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         border-radius: 100%;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
       }
 
       .nickname {
@@ -353,10 +364,25 @@ nav {
         color: @text-color;
         font-weight: 700;
         margin-left: 3px;
+        -webkit-transition: .4s;
+        -moz-transition: .4s;
+        -ms-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
       }
 
-      &:hover .nickname {
-        text-decoration: underline;
+      &:hover {
+
+        .avatar {
+          -webkit-box-shadow: 0 0 0 4px @main-color;
+          -moz-box-shadow: 0 0 0 4px @main-color;
+          box-shadow: 0 0 0 4px @main-color;
+        }
+
+        .nickname {
+          color: @main-color;
+        }
+
       }
 
     }
@@ -898,6 +924,12 @@ nav {
       .reviewer-name {
         font-weight: 700;
         font-size: 1.2em;
+
+        &:hover {
+          color: @main-color;
+          text-shadow: 0 0 1px @main-color;
+        }
+
       }
 
       .reviews-number {
@@ -927,6 +959,7 @@ nav {
       }
 
       .image-wrap {
+        display: block;
         width: 70px;
         height: 70px;
         border: 1px solid #bac6c7;
@@ -938,6 +971,14 @@ nav {
         left: 0;
         right: 0;
         bottom: -35px;
+
+        &:hover {
+          border: 1px solid @main-color;
+          -webkit-box-shadow: 0 0 0 3px @main-color;
+          -moz-box-shadow: 0 0 0 3px @main-color;
+          box-shadow: 0 0 0 3px @main-color;
+        }
+
       }
 
     }
