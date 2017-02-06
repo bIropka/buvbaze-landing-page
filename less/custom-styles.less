@@ -22,7 +22,6 @@
 
 .wrapper {
   width: 100%;
-  max-width: 2000px;
 }
 
 .wrapper-inner {
@@ -491,14 +490,30 @@ nav {
 ***********************************************************************************************************************/
 
 .search-block {
-  height: 100vh;
-  background: url(../images/background-1.jpg) center top;
-  background-size: auto 100%;
+  background: #9c6507;
+  position: relative;
+  margin-bottom: 10%;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 4.05%;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    background: transparent url(../images/background-1.png) no-repeat center;
+    background-size: 100% 100%;
+  }
 
   .logo {
     display: block;
     width: 40.75%;
-    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
 
     img {
       height: auto;
@@ -506,12 +521,7 @@ nav {
   }
 
   .search-block-inner {
-    background: rgba(0, 0, 0, .75);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 40%;
-    padding: 1.75% 0;
+    padding: 15% 0 1.75%;
 
     form {
       text-align: center;
