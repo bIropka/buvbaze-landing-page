@@ -439,7 +439,7 @@ nav ul li:last-child {
 .search-block {
   background: #9c6507;
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .search-block:after {
   content: '';
@@ -842,7 +842,7 @@ nav ul li:last-child {
 .stock h2:after {
   background: transparent url(../images/title-stock.png) center top;
 }
-.stock .ad {
+.stock .stock-item {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -851,16 +851,16 @@ nav ul li:last-child {
   margin-bottom: 2%;
   text-align: left;
 }
-.stock .ad:after {
+.stock .stock-item:after {
   content: '';
   display: block;
   clear: both;
 }
-.stock .ad .ad-info {
+.stock .stock-item .stock-item-info {
   width: 68%;
   border-right: 1px solid #e1e1e1;
 }
-.stock .ad .ad-info h3 a {
+.stock .stock-item .stock-item-info h3 a {
   display: block;
   font-weight: 700;
   color: inherit;
@@ -868,20 +868,20 @@ nav ul li:last-child {
   text-decoration: underline;
   margin: 30px 30px 0;
 }
-.stock .ad .ad-info h3 a:hover {
+.stock .stock-item .stock-item-info h3 a:hover {
   text-decoration: none;
 }
-.stock .ad .ad-info .ad-text {
+.stock .stock-item .stock-item-info .stock-item-text {
   font-style: italic;
   margin: 7px 30px 0;
 }
-.stock .ad .ad-info time {
+.stock .stock-item .stock-item-info time {
   display: block;
   color: #b6b6b6;
   font-size: .85em;
   margin: 7px 30px 10px;
 }
-.stock .ad .ad-info .bids-number {
+.stock .stock-item .stock-item-info .bids-number {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -890,7 +890,7 @@ nav ul li:last-child {
   color: #687477;
   margin-bottom: 30px;
 }
-.stock .ad .ad-info .bids-number:before {
+.stock .stock-item .stock-item-info .bids-number:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
@@ -901,10 +901,10 @@ nav ul li:last-child {
   position: relative;
   top: -2px;
 }
-.stock .ad .ad-info .bids-number span {
+.stock .stock-item .stock-item-info .bids-number span {
   font-size: inherit;
 }
-.stock .ad .ad-info .ad-region {
+.stock .stock-item .stock-item-info .stock-item-region {
   display: inline-block;
   vertical-align: middle;
   font-weight: 700;
@@ -912,14 +912,14 @@ nav ul li:last-child {
   color: #687477;
   margin-bottom: 30px;
 }
-.stock .ad .ad-info .ad-region span {
+.stock .stock-item .stock-item-info .stock-item-region span {
   font-size: inherit;
 }
-.stock .ad .ad-buy {
+.stock .stock-item .stock-item-buy {
   width: 32%;
   position: relative;
 }
-.stock .ad .ad-buy .ad-cost {
+.stock .stock-item .stock-item-buy .stock-item-cost {
   width: 100px;
   height: 40px;
   line-height: 40px;
@@ -934,7 +934,7 @@ nav ul li:last-child {
   right: 0;
   top: -5px;
 }
-.stock .ad .ad-buy .ad-cost:after {
+.stock .stock-item .stock-item-buy .stock-item-cost:after {
   content: '';
   display: block;
   width: 0;
@@ -946,11 +946,11 @@ nav ul li:last-child {
   left: 0;
   top: 40px;
 }
-.stock .ad .ad-buy .ad-cost span {
+.stock .stock-item .stock-item-buy .stock-item-cost span {
   font-size: inherit;
   font-weight: inherit;
 }
-.stock .ad .ad-buy a {
+.stock .stock-item .stock-item-buy a {
   display: block;
   width: 230px;
   height: 55px;
@@ -966,12 +966,12 @@ nav ul li:last-child {
   right: 0;
   bottom: 30px;
 }
-.stock .ad .ad-buy a:hover {
+.stock .stock-item .stock-item-buy a:hover {
   border: 1px solid #000;
   background: #000;
   color: #fff;
 }
-.stock .ad .ad-buy a:active {
+.stock .stock-item .stock-item-buy a:active {
   line-height: 60px;
 }
 /**********************************************************************************************************************
